@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "banner banner banner"
+    "motos motos motos"
+    "marcas marcas marcas"
+    "footer footer footer";
+    grid-template-columns: 100%;
+    grid-template-rows:  180px 2.2rem  500px 800px 1fr 100px;
+}
+
+
+
+header{
+    grid-area: header;
+    background-color: white;
+}
+
+/* Estilos header */
+.logo{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    
+}
+
+.contact{
+    height: 50px;
+    background-color: yellow;
+}
+
+.contact i{
+    margin: 12px;
+    font-size: 30px;
+}
+
+/* NAV */
+
+nav{
+    grid-area: nav;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black ;
+}
+
+/* Estilos nav */
+.nav li{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px;
+    color: #50504a;
+}
+
+.nav li{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+
+
+.banner{
+    grid-area: banner;
+    
+}
+
+/*Motos*/
+
+.motos{
+    grid-area: motos;
+    margin-top: 80px;
+}
+
+.flexMotos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.motos img{
+    margin: 10px;
+}
+
+
+
+.motos article h3{
+    text-align: center;
+}
+
+
+
+.subtitulo{
+    width: 70%;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    border-bottom: 1px solid #ACAC9D;
+    border-left: red solid 4px;
+}
+
+/* pagina motos */
+.containerMotos{
+    /* height: 800px; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.articleMotos{
+    text-align: center;
+}
+
+.title{
+    margin-top: 70px;
+    margin-bottom: 30px;
+    text-align: justify;
+    width: 70%;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    border-bottom: 1px solid #ACAC9D;
+    border-left: red solid 4px;
+}
+
+.h3{
+    margin: 30px;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.gridMotos{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "motos motos"
+    "footer footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 0.1fr 70px 1.5fr 0.1fr;
+}
+
+/*Marcas*/
+ .marcas{
+    grid-area: marcas;
+    margin-top: 70px;
+}
+.logoMarcas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+
+.logoMarcas img{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+/* Footer */
+footer{
+    grid-area: footer;
+    background-color:#e4e4d6 ;
+}
+
+.contactFooter{
+    height: 50px;
+}
+
+.contactFooter i{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media (max-width: 480px){
+    .grid{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "banner"
+        "motos"
+        "marcas"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows:  0.2fr 200px  0.3fr 1.2fr 0.8fr 0.1fr;
+    }
+
+    .nav li{
+        flex-flow: column nowrap;
+    }
+    
+    
+    .nav li{
+            
+            flex-flow: column nowrap;
+        }
+        .logoMarcas img{
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 30px;
+        }
+
+        .contactFooter i{
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .copyright{
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .motos article h3{
+            text-align: center;
+        }
+
+        .subtitulo{
+            font-size: 25px;
+            margin-bottom: 30px;
+            
+        }
+        
+}
+
+@media (min-width: 481px) and (max-width:1023px ) {
+
+
+    article img{
+        width: 200px;
+    }
+}
+
+@media (min-width: 1200){
+    .gridMotos{
+        display: grid;
+        grid-template-areas: 
+        "header header "
+        "nav nav"
+        "motos motos"
+        "footer footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .containerMotos{
+        /* height: 800px; */
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+}
