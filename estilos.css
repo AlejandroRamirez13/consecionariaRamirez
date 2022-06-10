@@ -30,6 +30,7 @@ header{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    margin-left: 15%;
     
 }
 
@@ -90,6 +91,32 @@ nav{
     justify-content: center;
 }
 
+.scale-up-center:hover {
+	-webkit-animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
 .motos img{
     margin: 10px;
 }
@@ -106,10 +133,23 @@ nav{
     width: 70%;
     font-size: 30px;
     margin-bottom: 40px;
-    margin-left: 40px;
+    margin-left: 20%;
     border-bottom: 1px solid #ACAC9D;
     border-left: red solid 4px;
 }
+
+.slide-left {
+	animation: slide-left 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100px);
+    }
+  }
 
 /* pagina motos */
 .containerMotos{
@@ -121,7 +161,9 @@ nav{
 
 .articleMotos{
     text-align: center;
+    cursor: pointer;
 }
+
 
 .title{
     margin-top: 70px;
@@ -149,7 +191,7 @@ nav{
     "motos motos"
     "footer footer";
     grid-template-columns: 100%;
-    grid-template-rows: 0.1fr 70px 1.5fr 0.1fr;
+    grid-template-rows: 0.1fr 40px 1.5fr 0.1fr;
 }
 
 /*Marcas*/
@@ -170,6 +212,22 @@ nav{
     margin-bottom: 50px;
 }
 
+.shadow-drop-2-center:hover {
+	-webkit-animation: shadow-drop-2-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-2-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes shadow-drop-2-center {
+    0% {
+            transform: translateZ(0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+            transform: translateZ(50px);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+  
 /* Footer */
 footer{
     grid-area: footer;
