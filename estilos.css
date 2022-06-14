@@ -15,7 +15,7 @@
     "marcas marcas marcas"
     "footer footer footer";
     grid-template-columns: 100%;
-    grid-template-rows:  180px 2.2rem  500px 800px 1fr 100px;
+    grid-template-rows:  180px 2.3rem  500px 800px 0.8fr 100px;
 }
 
 
@@ -49,14 +49,12 @@ header{
 nav{
     grid-area: nav;
     border-top: 1px solid black;
-    border-bottom: 1px solid black ;
 }
 
 /* Estilos nav */
-.nav li{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
+nav li{
+    display: inline-block;
+    margin-left: 30%;
 }
 
 .nav a{
@@ -66,23 +64,26 @@ nav{
     color: #50504a;
 }
 
-.nav li{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-evenly;
-    }
-
 
 .banner{
     grid-area: banner;
-    
 }
+
+.banner img{
+    height: 500px;
+}
+
+
 
 /*Motos*/
 
 .motos{
     grid-area: motos;
     margin-top: 80px;
+}
+
+.motos article{
+    margin: 10px;
 }
 
 .flexMotos{
@@ -275,10 +276,12 @@ footer{
     }
 
     .nav li{
+        display: flex;
         flex-flow: column nowrap;
     }
     
-    
+
+
     .nav li{
             
             flex-flow: column nowrap;
