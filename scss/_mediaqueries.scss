@@ -1,0 +1,118 @@
+@media (max-width: 480px){
+    .grid{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "banner"
+        "motos"
+        "marcas"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows:  0.2fr 200px  0.3fr 1.2fr 0.8fr 0.1fr;
+    }
+
+    .gridMotos{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "motos"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 180px 0.01fr 1fr 0.2fr;
+    }
+
+    .nav li{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+
+
+    .nav li{
+            
+            flex-flow: column nowrap;
+        }
+
+        .logo{
+            margin-left: 50%;
+        }
+
+        .logoMarcas img{
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 30px;
+        }
+
+        .subtitulo{
+            margin-left: 30%;
+        }
+
+        .contactFooter i{
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .copyright{
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .motos article h3{
+            text-align: center;
+        }
+
+        .subtitulo{
+            font-size: 25px;
+            margin-bottom: 30px;
+            
+        }
+        
+        
+        .contenedor-1{
+            width: 45%;
+            padding-top: 5px;
+            padding-right: 20px;
+            margin-top: 10px;
+        }
+
+        .contenedor-1  h3{
+            font-size: 1.1rem;
+            margin-left: 1rem;
+        }
+        
+        .contenedor-1 i{
+            font-size: 2rem;
+            margin-left: 1rem;
+        }
+        
+        .contenedor-2{
+            width: 45%;
+            padding-top: 5px;
+            padding-right: 20px;
+            margin-top: 10px;
+        }
+        
+        .contenedor-2  h3{
+            font-size: 1.1rem;
+            margin-left: 1rem;
+        }
+        
+        .contenedor-2 i{
+            font-size: 2rem;
+            margin-left: 1rem;
+        }
+}
+
+@media (min-width: 481px) and (max-width:1023px ) {
+
+
+    article img{
+        width: 200px;
+    }
+
+    .logo{
+        margin-left: 20%;
+    }
+}

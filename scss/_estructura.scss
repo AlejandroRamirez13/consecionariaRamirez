@@ -1,0 +1,302 @@
+//DEFINICION DE VARIABLES
+
+$yellow: #ffff00;
+
+
+
+//Estilos Globales
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+//grilla
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "banner banner banner"
+    "motos motos motos"
+    "marcas marcas marcas"
+    "footer footer footer";
+    grid-template-columns: 100%;
+    grid-template-rows:  180px 2.3rem  500px 800px 0.8fr 120px;
+}
+
+//Estilos header
+header{
+    grid-area: header;
+    background-color: white;
+
+    .logo{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin-left: 15%;
+        
+    }
+
+    .contact{
+        height: 50px;
+        background-color: $yellow;
+        i{
+            margin: 12px;
+            font-size: 30px;
+        }
+    }
+}
+
+
+//ESTILOS NAV
+
+nav{
+    grid-area: nav;
+    border-top: 1px solid black;
+    background-color: $yellow;
+
+    li{
+        display: inline-block;
+        margin-left: 30%;
+        margin-top: 0.3rem;
+
+        a{
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 8px;
+            color: #50504a;
+            margin-left: 1rem;
+
+            &:hover{
+                color: white;
+            }
+        }
+        
+    }
+    
+}
+
+
+//BANNER
+
+.banner{
+    grid-area: banner;
+    img{
+        height: 500px;
+    }
+}
+
+//Motos
+
+.motos{
+    grid-area: motos;
+    margin-top: 30px;
+
+    .flexMotos{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        article{
+            h3{
+                text-align: center;
+            }
+            margin: 10px;
+            img{
+                margin: 7px;
+            }
+        }
+        
+    }
+}
+
+
+//PUBLICIDAD
+.contenedor-publicidad{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+
+    .contenedor-1{
+        height: 100px;
+        width: 35%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        background-color: $yellow;
+        align-items: center;
+        border-radius: 12px 12px 12px 12px;
+        box-shadow: 2px 7px 7px -2px rgba(0,0,0,0.75);
+        padding-top: 15px;
+        padding-right: 35px;
+        margin-top: 20px;
+
+        h3{
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        i{
+            font-size: 2.5rem;
+            margin-left: 2rem;
+        }
+    }
+
+    .contenedor-2{
+        height: 100px;
+        width: 40%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        background-color: $yellow;
+        align-items: center;
+        border-radius: 12px 12px 12px 12px;
+        box-shadow: 2px 7px 7px -2px rgba(0,0,0,0.75);
+        padding-top: 15px;
+        padding-right: 35px;
+        margin-top: 20px;
+
+        h3{
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+//PAGINA MOTOS
+
+.gridMotos{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "motos motos"
+    "footer footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 0.1fr 40px 1.5fr 0.1fr;
+
+    .containerMotos{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    
+        .articleMotos{
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+    
+    .title{
+        margin-top: 70px;
+        margin-bottom: 30px;
+        text-align: justify;
+        width: 70%;
+        font-size: 30px;
+        margin-bottom: 40px;
+        margin-left: 40px;
+        border-bottom: 1px solid #ACAC9D;
+        border-left: red solid 4px;
+    }
+}
+
+
+
+//MARCAS
+
+.marcas{
+    grid-area: marcas;
+    margin-top: 70px;
+    .logoMarcas{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        margin-top: 80px;
+
+        img{
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+
+//PAGINA NOSOTROS
+.container{
+    margin-top: 2rem;
+
+    img{
+        margin-bottom: 3rem;
+        width: 100%;
+        height: 500px;
+    
+    }
+} 
+
+//ACCESORIOS
+.col-lg-4{
+    width: 300px;
+    height: 290px;
+}
+
+#cascos{
+    margin-top: 2rem;
+}
+
+//CONTACTO
+#contacto{
+    margin-top: 3rem;
+    .titulo{
+        height: 100px;
+        background-color: #fffffa;
+    }
+    .ubicacion-formulario{
+        margin-top: 3rem;
+        iframe{
+            height: 350px;
+            width: 400px;
+            margin-left: 3rem;
+        }
+
+    }
+}
+
+  
+//FOOTER
+footer{
+    grid-area: footer;
+    background-color:#e4e4d6 ;
+
+    .copyright{
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .contactFooter{
+        height: 50px;
+
+        i{
+            font-size: 30px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+
+
+
+
+
