@@ -1,3 +1,11 @@
+.bcgnav {
+  background-color: #ffff00;
+}
+
+.bcgfooter {
+  background-color: #e4e4d6;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +22,7 @@
 
 header {
   grid-area: header;
-  background-color: white;
+  background-color: #ffffff;
 }
 header .logo {
   display: flex;
@@ -66,7 +74,7 @@ nav li a:hover {
 .motos .flexMotos {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .motos .flexMotos article {
   margin: 10px;
@@ -84,7 +92,7 @@ nav li a:hover {
   align-items: center;
   margin-bottom: 50px;
 }
-.contenedor-publicidad .contenedor-1 {
+.contenedor-publicidad .contenedor-1, .contenedor-publicidad .contenedor-2 {
   height: 100px;
   width: 35%;
   display: flex;
@@ -98,28 +106,17 @@ nav li a:hover {
   padding-right: 35px;
   margin-top: 20px;
 }
-.contenedor-publicidad .contenedor-1 h3 {
+.contenedor-publicidad .contenedor-1 h3, .contenedor-publicidad .contenedor-2 h3 {
   font-size: 1.3rem;
   text-transform: uppercase;
   font-weight: bold;
 }
-.contenedor-publicidad .contenedor-1 i {
+.contenedor-publicidad .contenedor-1 i, .contenedor-publicidad .contenedor-2 i {
   font-size: 2.5rem;
   margin-left: 2rem;
 }
 .contenedor-publicidad .contenedor-2 {
-  height: 100px;
   width: 40%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  background-color: #ffff00;
-  align-items: center;
-  border-radius: 12px 12px 12px 12px;
-  box-shadow: 2px 7px 7px -2px rgba(0, 0, 0, 0.75);
-  padding-top: 15px;
-  padding-right: 35px;
-  margin-top: 20px;
 }
 .contenedor-publicidad .contenedor-2 h3 {
   font-size: 1.3rem;
@@ -193,15 +190,23 @@ nav li a:hover {
 }
 #contacto .titulo {
   height: 100px;
-  background-color: #fffffa;
+  background-color: #ffffff;
+}
+#contacto .formulario {
+  display: flex;
+  flex-flow: column nowrap;
+  border: black solid 1px;
+  height: 500px;
+  width: 500px;
+  padding: 5px 10px 5px 20px;
 }
 #contacto .ubicacion-formulario {
   margin-top: 3rem;
 }
 #contacto .ubicacion-formulario iframe {
-  height: 350px;
+  height: 500px;
   width: 400px;
-  margin-left: 3rem;
+  margin-left: 5rem;
 }
 
 footer {
@@ -320,17 +325,17 @@ footer .contactFooter i {
     font-size: 25px;
     margin-bottom: 30px;
   }
-  .contenedor-1 {
+  .contenedor-1, .contenedor-publicidad .contenedor-2 {
     width: 45%;
     padding-top: 5px;
     padding-right: 20px;
     margin-top: 10px;
   }
-  .contenedor-1 h3 {
+  .contenedor-1 h3, .contenedor-publicidad .contenedor-2 h3 {
     font-size: 1.1rem;
     margin-left: 1rem;
   }
-  .contenedor-1 i {
+  .contenedor-1 i, .contenedor-publicidad .contenedor-2 i {
     font-size: 2rem;
     margin-left: 1rem;
   }
