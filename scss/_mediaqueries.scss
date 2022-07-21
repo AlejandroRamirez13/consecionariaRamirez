@@ -2,16 +2,23 @@
     .grid{
         display: grid;
         grid-template-areas: 
-        "header"
-        "nav"
-        "banner"
-        "motos"
-        "marcas"
-        "footer";
+        "header header"
+        "nav nav"
+        "banner banner"
+        "motos motos"
+        "marcas marcas"
+        "footer marcas";
         grid-template-columns: 100%;
-        grid-template-rows:  0.2fr 200px  0.3fr 1.2fr 0.8fr 0.1fr;
+        grid-template-rows:  0.2fr 200px  0.3fr 1.2fr 0.8fr 0.2fr;
     }
 
+    #cascos{
+    div{
+        row{
+            margin-left: 100px;
+        }
+    }
+    }
     .gridMotos{
         display: grid;
         grid-template-areas: 
@@ -20,7 +27,7 @@
         "motos"
         "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 180px 0.01fr 1fr 0.2fr;
+        grid-template-rows: 180px 0.01fr 1fr 0.1fr;
     }
 
     .nav li{
